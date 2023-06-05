@@ -1,0 +1,68 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.about {
+  background-color: #171821;
+  
+}
+
+.about .content {
+  display: flex;
+  padding-left: 13%;
+  min-height: 600px;
+  max-width: 90%;
+  background-color: #171821;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.content .left {
+  min-width: 50%;
+  justify-content: start;
+
+  padding-top: 20px;
+  @include device (mobile){
+    max-width: 600px;    
+    }
+  
+}
+.left h1{
+  font-size: 60px;
+
+  @include device (mobile){
+  font-size: 55px;    
+  }
+
+}
+
+.left h3{
+  font-size: 30px;
+}
+
+.content .left section {
+  max-width: 70%;
+  padding-top: 45px;
+
+ 
+}
+
+.left p {
+  font-size: 20px;
+
+  @include device (mobile){
+    text-align: start;   
+    }
+  
+}
+
+.content .right {
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include device (mobile){
+    display: none;
+  }
+
+}

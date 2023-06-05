@@ -1,0 +1,69 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.subscribe {
+  height: 300px;
+  background-color: #171821;
+  margin-top: 60px;
+  scroll-margin-top: 10rem;
+
+  @include device(mobile) {
+    margin-bottom: 20%;
+  }
+}
+.content {
+  display: flex;
+  max-width: 60%;
+  margin: 0 auto;
+  @include device(mobile) {
+    max-width: 100%;
+  }
+}
+
+.content .left {
+  flex: 1;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.left h1 {
+  color: white;
+  margin-top: 25%;
+  font-size: 60px;
+
+  @include device(mobile) {
+    font-size: 30px;
+    margin: 30px;
+    padding-left: 0;
+  }
+}
+
+.content .form {
+  background-color: #6477b9;
+  width: 700px;
+  height: 350px;
+  margin-top: 70px;
+  display: block;
+
+  @include device(mobile) {
+    margin-top: 30%;
+   margin: 0 auto;
+  height: 300px;  }
+}
+
+.form .forminside {
+  display: grid;
+  padding: 100px;
+  margin: 0 auto;
+  @include device(mobile) {
+   
+  padding-left: 20%;
+  }
+}
+
+.submit{
+  margin-top: 20px;
+  max-width: 50%;
+  
+
+}

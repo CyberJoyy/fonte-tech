@@ -1,0 +1,72 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+.team {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  @include device(mobile) {
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+
+  @include device(mobile) {
+    display: grid;
+  }
+}
+
+.content .left {
+  flex: 1;
+}
+
+.left h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  padding-left: 10px;
+  @include device(mobile) {
+    font-size: 50px;
+    padding-left: 0;
+  }
+}
+
+.left p {
+  padding-left: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  @include device(mobile) {
+    padding-left: 0;
+  }
+}
+
+.content .right {
+  flex: 1;
+}
+
+.right p {
+  font-size: 20px;
+  padding-left: 50px;
+  max-width: 550px;
+  text-align: justify;
+  scroll-margin-top: 10rem;
+
+  @include device(mobile) {
+    padding-left: 0;
+    text-align: justify;
+  }
+}
+
+.team .pictures {
+  display: flex;
+
+  @include device(mobile) {
+    display: none;
+  }
+}
+
+.pictures img {
+  padding: 10px;
+}

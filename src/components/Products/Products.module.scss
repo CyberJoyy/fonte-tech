@@ -1,0 +1,57 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+
+.products{
+    min-width: 400px;
+    background-color: white;
+    max-width: 90%;
+    padding-left: 5%;
+    scroll-margin-top: 10rem;
+
+    
+}
+.products h1{
+ font-size: 60px;
+
+    @include device (mobile){
+        font-size: 50px;
+        margin-left: -20px;
+    }
+}
+
+.products .content{
+display: flex;
+justify-content: space-around;
+padding-left: 6%;
+padding-top: 5%;
+padding-bottom: 5%;
+
+@include device (mobile){
+ display: block;      
+}
+
+} 
+.section h3{
+    font-size: 32px;
+}
+
+
+.products .content section{
+    max-width: 25%;
+    
+    @include device (mobile){
+       max-width: 100%;
+    }
+
+}
+
+.content p{
+    font-size: 18px;
+
+    @include device (mobile){
+        text-align: justify;
+        max-width: 300px;
+    }
+  
+}
